@@ -140,15 +140,16 @@ nav {
     top: 50%;
     left: 50%;
     font-size: 5rem;
-    color: var(--white);
     letter-spacing: 25px;
 }
 
 .text__left {
+    color black;
     transform: translate(calc(-50% - 250px), -50%);
 }
 
 .text__right {
+    color: var(--white);
     transform: translate(calc(-50% + 250px), -50%);
 }
 
