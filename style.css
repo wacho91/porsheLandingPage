@@ -180,3 +180,39 @@ nav {
     background-color: transparent;
     border: 1px solid var(--text-dark);
 }
+
+.container h5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.container h5::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100px;
+    top: 50%;
+}
+
+.feature-1 {
+    color: var(--text-dark);
+    transform: translate(calc(-50% - 300px), calc(-50% - 200px));
+}
+
+.feature-2 {
+    color: var(--white);
+    transform: translate(calc(-50% + 300px), calc(-50% - 200px));
+}
+
+.feature-3 {
+    color: var(--text-dark);
+    transform: translate(calc(-50% - 300px), calc(-50% + 200px));
+}
+
+.feature-4 {
+    color: var(--white);
+    transform: translate(calc(-50% + 300px), calc(-50% + 200px));
+}
