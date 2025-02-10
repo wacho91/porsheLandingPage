@@ -216,3 +216,77 @@ nav {
     color: var(--white);
     transform: translate(calc(-50% + 300px), calc(-50% + 200px));
 }
+
+.feature-1::after,
+.feature-3::after {
+  right: 0;
+  transform: translate(calc(100% + 40px), -50%);
+  background-color: var(--text-dark);
+}
+
+.feature-2::after,
+.feature-4::after {
+  left: 0;
+  transform: translate(calc(-100% - 40px), -50%);
+  background-color: var(--white);
+}
+
+.footer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding-inline: 1rem;
+    bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    color: var(--text-dark);
+}
+
+.footer__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer__links li {
+    opacity: 0;
+    animation: fade__in 0.3s ease-in-out forwards;
+}
+
+.footer__links li:nth-child(1) {
+    animation-delay: 6s;
+}
+  
+.footer__links li:nth-child(2) {
+    animation-delay: 6.5s; 
+}
+  
+.footer__links li:nth-child(3) {
+    animation-delay: 7s;
+}
+
+@keyframes fade__in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.footer__links a {
+    color: var(--white);
+}
+
+.footer__links a:hover {
+    color: var(--primary-color);
+}
